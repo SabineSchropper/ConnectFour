@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "RqQPMPEgEWakIPY0JORJukMXmh+6ckZYUP8wXIdk9D30mYF/hQV9YjG7AD83ivYIs8fjkg3lQVK1PK64Xf/oqA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DCV\\C#\\ConnectFour\\ConnectFourLogic\\ConnectFourLogic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DCV\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\DCV\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

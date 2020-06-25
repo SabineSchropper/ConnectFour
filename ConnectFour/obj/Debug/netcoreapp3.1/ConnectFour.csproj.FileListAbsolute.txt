@@ -1,0 +1,5 @@
+C:\Users\DCV\C#\ConnectFour\ConnectFour\bin\Debug\netcoreapp3.1\ConnectFourData.dll
+C:\Users\DCV\C#\ConnectFour\ConnectFour\bin\Debug\netcoreapp3.1\ConnectFourLogic.dll
+C:\Users\DCV\C#\ConnectFour\ConnectFour\obj\Debug\netcoreapp3.1\ConnectFour.csprojAssemblyReference.cache
+C:\Users\DCV\C#\ConnectFour\ConnectFour\obj\Debug\netcoreapp3.1\ConnectFour.AssemblyInfoInputs.cache
+C:\Users\DCV\C#\ConnectFour\ConnectFour\obj\Debug\netcoreapp3.1\ConnectFour.AssemblyInfo.cs
