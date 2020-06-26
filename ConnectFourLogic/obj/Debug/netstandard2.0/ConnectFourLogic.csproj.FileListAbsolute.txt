@@ -1,0 +1,15 @@
+C:\Users\DCV\C#\ConnectFour\ConnectFourLogic\bin\Debug\netstandard2.0\ConnectFourLogic.deps.json
+C:\Users\DCV\C#\ConnectFour\ConnectFourLogic\bin\Debug\netstandard2.0\ConnectFourLogic.dll
+C:\Users\DCV\C#\ConnectFour\ConnectFourLogic\bin\Debug\netstandard2.0\ConnectFourLogic.pdb
+C:\Users\DCV\C#\ConnectFour\ConnectFourLogic\bin\Debug\netstandard2.0\ConnectFourData.dll
+C:\Users\DCV\C#\ConnectFour\ConnectFourLogic\bin\Debug\netstandard2.0\EntityFramework.dll
+C:\Users\DCV\C#\ConnectFour\ConnectFourLogic\bin\Debug\netstandard2.0\ConnectFourData.pdb
+C:\Users\DCV\C#\ConnectFour\ConnectFourLogic\bin\Debug\netstandard2.0\ConnectFourData.dll.config
+C:\Users\DCV\C#\ConnectFour\ConnectFourLogic\bin\Debug\netstandard2.0\EntityFramework.xml
+C:\Users\DCV\C#\ConnectFour\ConnectFourLogic\obj\Debug\netstandard2.0\ConnectFourLogic.csprojAssemblyReference.cache
+C:\Users\DCV\C#\ConnectFour\ConnectFourLogic\obj\Debug\netstandard2.0\ConnectFourLogic.AssemblyInfoInputs.cache
+C:\Users\DCV\C#\ConnectFour\ConnectFourLogic\obj\Debug\netstandard2.0\ConnectFourLogic.AssemblyInfo.cs
+C:\Users\DCV\C#\ConnectFour\ConnectFourLogic\obj\Debug\netstandard2.0\ConnectFourLogic.csproj.CoreCompileInputs.cache
+C:\Users\DCV\C#\ConnectFour\ConnectFourLogic\obj\Debug\netstandard2.0\ConnectFourLogic.csproj.CopyComplete
+C:\Users\DCV\C#\ConnectFour\ConnectFourLogic\obj\Debug\netstandard2.0\ConnectFourLogic.dll
+C:\Users\DCV\C#\ConnectFour\ConnectFourLogic\obj\Debug\netstandard2.0\ConnectFourLogic.pdb

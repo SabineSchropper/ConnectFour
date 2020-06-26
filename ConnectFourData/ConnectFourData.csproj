@@ -43,6 +43,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,12 +53,56 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConnectFourModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConnectFourModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectFourModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConnectFourModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectFourModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConnectFourModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Play.cs">
+      <DependentUpon>ConnectFourModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs">
+      <DependentUpon>ConnectFourModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerModel.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <EntityDeploy Include="ConnectFourModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ConnectFourModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ConnectFourModel.edmx.diagram">
+      <DependentUpon>ConnectFourModel.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ConnectFourModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ConnectFourModel.edmx</DependentUpon>
+      <LastGenOutput>ConnectFourModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ConnectFourModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ConnectFourModel.edmx</DependentUpon>
+      <LastGenOutput>ConnectFourModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

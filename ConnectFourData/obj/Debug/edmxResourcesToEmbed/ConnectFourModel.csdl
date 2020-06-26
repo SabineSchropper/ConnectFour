@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ConnectFourModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ConnectFourEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Play" EntityType="ConnectFourModel.Play" />
+    <EntitySet Name="Player" EntityType="ConnectFourModel.Player" />
+    <AssociationSet Name="FK_Play_Player" Association="ConnectFourModel.FK_Play_Player">
+      <End Role="Player" EntitySet="Player" />
+      <End Role="Play" EntitySet="Play" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Player_Player" Association="ConnectFourModel.FK_Player_Player">
+      <End Role="Player" EntitySet="Player" />
+      <End Role="Player1" EntitySet="Player" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Play">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="winner" Type="Int32" Nullable="false" />
+    <Property Name="loser" Type="Int32" Nullable="false" />
+    <Property Name="klicks" Type="Int32" Nullable="false" />
+    <Property Name="time_in_seconds" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Player" Relationship="ConnectFourModel.FK_Play_Player" FromRole="Play" ToRole="Player" />
+  </EntityType>
+  <EntityType Name="Player">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Play" Relationship="ConnectFourModel.FK_Play_Player" FromRole="Player" ToRole="Play" />
+    <NavigationProperty Name="Player1" Relationship="ConnectFourModel.FK_Player_Player" FromRole="Player" ToRole="Player1" />
+    <NavigationProperty Name="Player2" Relationship="ConnectFourModel.FK_Player_Player" FromRole="Player1" ToRole="Player" />
+  </EntityType>
+  <Association Name="FK_Play_Player">
+    <End Type="ConnectFourModel.Player" Role="Player" Multiplicity="1" />
+    <End Type="ConnectFourModel.Play" Role="Play" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Player">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Play">
+        <PropertyRef Name="loser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Player_Player">
+    <End Type="ConnectFourModel.Player" Role="Player" Multiplicity="1" />
+    <End Type="ConnectFourModel.Player" Role="Player1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Player">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Player1">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

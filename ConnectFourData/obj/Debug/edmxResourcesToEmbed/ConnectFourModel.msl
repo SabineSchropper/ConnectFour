@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ConnectFourModelStoreContainer" CdmEntityContainer="ConnectFourEntities">
+    <EntitySetMapping Name="Play">
+      <EntityTypeMapping TypeName="ConnectFourModel.Play">
+        <MappingFragment StoreEntitySet="Play">
+          <ScalarProperty Name="time_in_seconds" ColumnName="time_in_seconds" />
+          <ScalarProperty Name="klicks" ColumnName="klicks" />
+          <ScalarProperty Name="loser" ColumnName="loser" />
+          <ScalarProperty Name="winner" ColumnName="winner" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Player">
+      <EntityTypeMapping TypeName="ConnectFourModel.Player">
+        <MappingFragment StoreEntitySet="Player">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
