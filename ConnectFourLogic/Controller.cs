@@ -25,6 +25,11 @@ namespace ConnectFourLogic
             Player1 = player1;
             Player2 = player2;
         }
+        public void GetNextFreeRow(int column)
+        {
+          ///wie kann ich im Controller herausfinden, welche Reihe noch frei ist?
+
+        }
        
     }
 }

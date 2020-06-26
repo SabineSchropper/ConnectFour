@@ -25,7 +25,15 @@ namespace ConnectFour
 
         private void btn0_Click(object sender, EventArgs e)
         {
+
           
+        }
+
+        private void ColorMyBox(int column)
+        {
+            var myRow = controller.GetNextFreeRow(column);
+            var myPb = Controls.Find($"pb{column}{myRow}", true).FirstOrDefault();
+            myPb.BackColor = Color.Red;
         }
 
         private void btn1_Click(object sender, EventArgs e)
